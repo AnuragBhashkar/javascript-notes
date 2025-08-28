@@ -18,11 +18,14 @@ const isLoggedIn = false
 const outsideTemp = null
 let userEmail;
 
+// Symbol is used to create unique identifiers. Even if two symbols have the same description, they are different.
 const id = Symbol('123')
 const anotherId = Symbol('123')
+// console.log(id === anotherId); // false
+// console.log(typeof anotherId); // symbol
 
-console.log(id === anotherId);
-const bigNumber = 3456543576654356754n
+
+const bigNumber = 3456543576654356754n // n at the end to denote BigInt
 
 
 
@@ -30,7 +33,10 @@ const bigNumber = 3456543576654356754n
 
 // Array, Objects, Functions
 
-const heros = ["shaktiman", "naagraj", "doga"];
+const heros = ["Java", "JavaScript", "ReactJs"];
+console.log(heros); 
+console.log(typeof heros); // "object" but not arrays because arrays are a type of object in JavaScript
+
 let myObj = {
     name: "hitesh",
     age: 22,
@@ -39,5 +45,5 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello world");
 }
+myFunction(); // function call 
 
-console.log(typeof anotherId);
