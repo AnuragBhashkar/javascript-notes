@@ -36,6 +36,8 @@ const bigNumber = 3456543576654356754n // n at the end to denote BigInt
 const heros = ["Java", "JavaScript", "ReactJs"];
 console.log(heros); 
 console.log(typeof heros); // "object" but not arrays because arrays are a type of object in JavaScript
+console.log(Array.isArray(heros));  // true
+
 
 let myObj = {
     name: "hitesh",
@@ -46,4 +48,3 @@ const myFunction = function(){
     console.log("Hello world");
 }
 myFunction(); // function call 
-
