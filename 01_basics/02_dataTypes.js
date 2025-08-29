@@ -2,10 +2,12 @@
 //There are two types of data types in javascript:
 //1. Primitive data types:- 
 //       ==> Numberic(number,bigint) and non-numeric(string,boolean,null,undefined,symbol)
-//2. Non-primitive data types(object,arrays,function,date object, regular expression etc.) 
+//2. Non-primitive data types:- (object,arrays,function,date object, regular expression etc.) 
 
 "use strict"; //it is used to enable strict mode in javascript and treat all JS code as newer version. 
 // It helps to write secure javascript code. 
+// Helps catch mistakes early.
+// Prevents bad practices (like using undeclared variables).
 
 //alert("Welcome to data types in javascript"); //it will not work in node.js environment. It will work in browser environment only.
 
@@ -21,10 +23,10 @@ let a = 5;
 let b = 5;
 
 // It store Boolean data type
-(a == b )
+(a == b ) //--> returns true to the console
 
-// To check Strictly (i.e. Whether the datatypesof both variables are same) === is used
-// (a === b)---> returns true to the console
+// To check Strictly (i.e. Whether the datatypes and values of both variables are same)--> "===" is used
+(a === b) //---> returns true to the console because both value and datatype are same
  
 //----------------------------------------------------------------------------------------------//
 
@@ -49,7 +51,7 @@ console.log(typeof []) // object
 
 
 
-// It store object data 
+// It store object data:- 
 // (objects are represented in the below way mainly)
 let Student = {
     firstName: "Johnny",
@@ -58,7 +60,7 @@ let Student = {
     mark: "blueEYE"
 }
 
-// It store array data type
+// It store array data type which is also a type of object data type.
 let places= ["GFG", "Computer", "Hello"];
 
 //----------------------------------------------------------------------------------------------//

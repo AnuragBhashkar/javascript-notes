@@ -2,7 +2,8 @@
 Data types in javascript:
 There are two types of data types in javascript:
     1). Primitive data types:- 
-        ==> Numberic(number,bigint) and non-numeric(string,boolean,null,undefined,symbol)
+        ==> Numberic(number,bigint), and
+        ==> Non-Numeric(string,boolean,null,undefined,symbol)
     2). Non-primitive data types(object,arrays,function,date object, regular expression etc.) 
 */
 
@@ -10,7 +11,7 @@ There are two types of data types in javascript:
 
 console.log(5>2>1); // here 5>2 is true, and true is converted to 1, so 1>1 is false
 
-console.log("5"===5) //false because === checks for both value and type to be same
+console.log("5"===5) //false because === checks for both value and type to be same and here type is different.
 console.log("5"==5) //true ===> JavaScript would perform type coercion, converting the string "5" to the number 5.
 console.log("5"!==5) //It returns true if either the value OR the type is different.
 

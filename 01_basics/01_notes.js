@@ -9,7 +9,7 @@ Variables declared without the var, let, or const keywords inside a function aut
 /*
 
 let:
-- Block-scoped: Accessible only within the block it is defined.
+- Block-scoped: Accessible only within the block it is defined. (block-scoped means inside the "{}" whether it is if{} or anything else)
 - meaning they are only accessible within the block, statement, or expression where they are defined.
 - Can be updated but not re-declared within the same scope.
 
@@ -27,17 +27,41 @@ var:
 
 */
 
+
 //---------------------------------------------------------------------------------- //
 
-// Notes on JavaScript basics:
-// 1. JavaScript is case-sensitive
-// 2. Variable names cannot start with numbers
-// 3. Variable names cannot contain spaces or hyphens (-)
-// 4. Use camelCase for variable names (e.g., myVariableName)
-// 5. Use meaningful variable names
-// 6. Always declare variables with let, const, or var
-// 7. Use const for variables that won't be reassigned
-// 8. Use let for variables that will be reassigned
-// 9. Avoid using var (due to its function scope and hoisting behavior)
-// 10. Use strict equality (===) and inequality (!==) operators to avoid type coercion issues
+/*
+🔹 What is Hoisting?
 
+- Hoisting in JavaScript is behavior of moving variable and function declarations to the top of their scope (before code execution).
+
+- But only the declarations are hoisted, not the initializations.
+
+- var → hoisted + initialized as undefined.
+
+- let / const → hoisted but in TDZ, can’t use before declaration.
+- ("TDZ → Temporal Dead Zone" means the time between entering scope and variable declaration)
+
+- Function declarations → fully hoisted (safe to use before).
+
+- Function expressions → hoisted like variables (var → undefined, let/const → TDZ).
+*/
+
+//---------------------------------------------------------------------------------- //
+
+/*
+Notes on JavaScript basics:-
+    1. JavaScript is case-sensitive
+    2. Variable names cannot start with numbers
+    3. Variable names cannot contain spaces or hyphens (-)
+    4. Use camelCase for variable names (e.g., myVariableName)
+    5. Use meaningful variable names
+    6. Always declare variables with let, const, or var
+    7. Use const for variables that won't be reassigned
+    8. Use let for variables that will be reassigned
+    9. Avoid using var (due to its function scope and hoisting behavior)
+    10. Use strict equality (===) and inequality (!==) operators to avoid type coercion issues
+    11. Use semicolons (;) to terminate statements (optional but recommended)
+*/
+
+//---------------------------------------------------------------------------------- //

@@ -19,7 +19,7 @@ console.log(typeof score2InNumber); //number
 /*
 let score3="33abc"
 let score3InNumber=Number(score3); //NaN because "33abc" is not a pure number
-console.log(typeof score3InNumber); 
+console.log(typeof score3InNumber); //number
 console.log(score3InNumber); //NaN
 */
 
@@ -28,7 +28,7 @@ console.log(score3InNumber); //NaN
 /*
 let isLoggedIn=1
 console.log(typeof isLoggedIn) //number 
-let booleanIsLoggedIn=Boolean(isLoggedIn) //It will convert string to boolean
+let booleanIsLoggedIn=Boolean(isLoggedIn) //It will convert to boolean
 console.log(booleanIsLoggedIn); //true because 1 => true and 2 => false.
 console.log(typeof booleanIsLoggedIn); //boolean
 // 1 => true, 0 =>false
