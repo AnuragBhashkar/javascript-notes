@@ -15,6 +15,8 @@ const scoreValue = 100.3
 
 const isLoggedIn = false
 const outsideTemp = null
+console.log(typeof outsideTemp); // object because of a bug in JavaScript
+
 let userEmail;
 
 // Symbol is used to create unique identifiers. Even if two symbols have the same description, they are different.
@@ -24,7 +26,8 @@ const anotherId = Symbol('123')
 // console.log(typeof anotherId); // symbol
 
 
-const bigNumber = 3456543576654356754n // n at the end to denote BigInt
+const bigNumber = 34565435766543567587576n // n at the end to denote BigInt
+console.log(typeof bigNumber); // bigint because of n in the end
 
 
 
@@ -48,3 +51,8 @@ const myFunction = function(){
     console.log("Hello world");
 }
 myFunction(); // function call 
+console.log(typeof myFunction); // function but technically it's an object in JavaScript that's why it is called function object.
+
+//---------------------------------------------------------------------------------------------------//
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
