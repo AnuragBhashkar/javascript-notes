@@ -48,7 +48,7 @@ console.log(Array.isArray(heros));  // true because it checks whether it's an ar
 // value can be of any data type
 // key-value pair is called property
 // object is mutable (can be changed)
-let myObj = {
+let myObj = {  // object literal
     name: "hitesh",
     age: 22,
 }
