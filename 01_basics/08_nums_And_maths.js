@@ -5,15 +5,16 @@ const balance = new Number(100)
 // console.log(balance); //[Number: 100] //it's an object not a primitive value
 // console.log(balance + 1); //101 because JS converts it to primitive number
 
-console.log(balance.toString().length);
-console.log(balance.toFixed(1));
+console.log(balance.toString().length); //3 because it's converted to string '100'
+console.log(balance.toFixed(1)); //100.0 //it converts number to string with fixed decimal points
 
 const otherNumber = 123.8966
 
 console.log(otherNumber.toPrecision(4));
 
 const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+// console.log(hundreds.toLocaleString('en-IN')); //10,00,000 //Indian format
+console.log(hundreds.toLocaleString('en-US')); //1,000,000 //US format
 
 
 //----------------------------------------------------------------------------------------------//
