@@ -20,13 +20,16 @@ console.log(hundreds.toLocaleString('en-US')); //1,000,000 //US format
 //----------------------------------------------------------------------------------------------//
 //----------------------------------(Maths)----------------------------------//
 
-// console.log(Math);
-// console.log(Math.abs(-4));
-// console.log(Math.round(4.6));
+console.log(Math); //Math is a built-in object in JS which has properties and methods for mathematical constants and functions 
+console.log(Math.abs(-4)); //4
+console.log(Math.round(4.6)); //5
 // console.log(Math.ceil(4.2));
 // console.log(Math.floor(4.9));
-// console.log(Math.min(4, 3, 6, 8));
-// console.log(Math.max(4, 3, 6, 8));
+console.log(Math.min(4, 3, 6, 8)); //3
+console.log(Math.max(4, 3, 6, 8)); //8
+console.log(Math.sqrt(64)); //8
+console.log(Math.pow(2, 4)); //16
+console.log(Math.PI); //3.141592653589793
 
 console.log(Math.random());
 console.log((Math.random()*10) + 1);
