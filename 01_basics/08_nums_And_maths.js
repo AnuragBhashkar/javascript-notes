@@ -39,3 +39,9 @@ const min = 10
 const max = 20
 
 console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+// Generates a random number between min and max (inclusive)
+// Math.random() * (max - min + 1) generates a number between 0 and (max - min + 1)
+// Math.floor(...) rounds it down to the nearest whole number
+// Adding min shifts the range to be between min and max
+//----------------------------------------------------------------------------------------------//
+
